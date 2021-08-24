@@ -46,7 +46,7 @@ class NavigationLine{
 		this.olLayer_line.on("postrender",this.animation.bind(this))
 	}
 	animation(){
-		this.first_ ++;
+		this.first_++;
 		this.first_ = this.first_ % this.style.interval;
 		this.olLayer_line.setStyle(this.olLayer_line.getStyle())
 	}
@@ -110,7 +110,6 @@ class NavigationLine{
 						rotateWithView: true,
 						rotation: Math.PI + Math.atan2(pix_end[1]-pix_start[1],pix_end[0]-pix_start[0]),
 						scale:this.style.line_width/12,
-						// imgSize:[this.style.line_width,this.style.line_width]
 					}),
 				})
 				//下次循环开始点为当前点
@@ -125,7 +124,6 @@ class NavigationLine{
 						rotateWithView: true,
 						rotation: Math.PI + Math.atan2(pix_end[1]-pix_start[1],pix_end[0]-pix_start[0]),
 						scale:this.style.line_width/12,
-						// imgSize:[this.style.line_width,this.style.line_width]
 					}),
 				})
 				pix_start = pix_end;

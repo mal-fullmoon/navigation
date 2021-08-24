@@ -71,8 +71,8 @@ export default {
 					}]
 				]
 			},map)
-			new DrawNav({},map)
-			new Start({},map)
+			// new DrawNav({},map)
+			// new Start({},map)
 
 			var bbox = [-95, 30 ,-85, 40];
 			var cellSide = 50;
